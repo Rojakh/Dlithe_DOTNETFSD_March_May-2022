@@ -1,0 +1,95 @@
+**inline css**
+    <p style="color: blue;">This is inline css.</p>
+    ** internal css**
+    <style type="text/css">
+        body {background-color:lightblue;}
+        p{color:red(255, 0, 0);}
+        p1{color:#04AA6D;}
+    </style>
+    **external css**
+    <link rel="stylesheet" type="text/css" href="style.css">
+    **element selector**
+    <style>
+        p{
+          text-align: center;
+          color: rgb(132, 0, 255);
+        } 
+        </style>
+        </head>
+        <body>
+        
+        <p>Every paragraph will be affected by the style.</p>
+        <p id="roja">My editings</p>
+        <p>these are all the element selectors</p>
+
+        </body>
+<--id selectors-->
+<style>
+    #roja {
+      text-align: center;
+      color: rgb(255, 0, 157);
+    }
+    </style>
+    </head>
+    <body>
+    
+    <p id="roja">Hello World!</p>
+    <p>ID selectors we are using # symbol</p>
+    
+    </body>
+   <--class selectors--> 
+    <style>
+        .center {
+          text-align: center;
+          color: rgb(9, 255, 0);
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1 class="center">Class selectors</h1>
+        <p class="center">we are using . for class selectors</p> 
+       </body> 
+       <style>
+        * {
+          text-align: first;
+          color: blue;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>Universal selectors</h1>
+        
+        <p>we are using * symbol for universal selectors</p>
+        <p id="roja">This is for universal selector</p>
+        <p>universal selectors used for matches any type of value</p>
+        </body>
+        <style>
+        h1 {
+            text-align: center;
+            color: rgb(0, 255, 136);
+          }
+          
+          h2 {
+            text-align: center;
+            color: rgb(0, 204, 255);
+          }
+          
+          p {
+            text-align: center;
+            color: rgb(255, 0, 149);
+          }
+          h1, h2, p {
+text-align: center;
+color: rgb(14, 18, 36);
+}
+</style>
+</head>
+<body>
+
+<h1>Grouping selectors</h1>
+<h2>Smaller heading!</h2>
+<p>This is a paragraph.</p>
+
+</body>

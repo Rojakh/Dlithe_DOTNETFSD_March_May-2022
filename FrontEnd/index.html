@@ -75,6 +75,7 @@
         <style type="text/css">
             body {background-color:lightblue;}
             p{color:red(255, 0, 0);}
+            p1{color:#04AA6D;}
         </style>
         **external css**
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -82,20 +83,20 @@
         <style>
             p{
               text-align: center;
-              color: red;
+              color: rgb(132, 0, 255);
             } 
             </style>
             </head>
             <body>
             
             <p>Every paragraph will be affected by the style.</p>
-            <p id="para1">Me too!</p>
-            <p>And me!</p>
+            <p id="roja">My editings</p>
+            <p>these are all the element selectors</p>
 
             </body>
     <--id selectors-->
     <style>
-        #para1 {
+        #roja {
           text-align: center;
           color: rgb(255, 0, 157);
         }
@@ -103,7 +104,7 @@
         </head>
         <body>
         
-        <p id="para1">Hello World!</p>
+        <p id="roja">Hello World!</p>
         <p>ID selectors we are using # symbol</p>
         
         </body>
@@ -132,27 +133,27 @@
             <h1>Universal selectors</h1>
             
             <p>we are using * symbol for universal selectors</p>
-            <p id="para1">Me too!</p>
-            <p>And me!</p>
+            <p id="roja">This is for universal selector</p>
+            <p>universal selectors used for matches any type of value</p>
             </body>
             <style>
             h1 {
                 text-align: center;
-                color: red;
+                color: rgb(0, 255, 136);
               }
               
               h2 {
                 text-align: center;
-                color: red;
+                color: rgb(0, 204, 255);
               }
               
               p {
                 text-align: center;
-                color: red;
+                color: rgb(255, 0, 149);
               }
               h1, h2, p {
   text-align: center;
-  color: red;
+  color: rgb(14, 18, 36);
 }
 </style>
 </head>
@@ -163,154 +164,6 @@
 <p>This is a paragraph.</p>
 
 </body>
-<style>
-    h1::before {
-      content: url(smiley.gif);
-    }
-    </style>
-    <body>
-    
-    <h1>This is a heading</h1>
-    <p>The ::before pseudo-element inserts content before the content of an element.</p>
-    
-    <h1>This is a heading</h1>
-    </body>
-    <style>
-        h1::before {
-          content: url(smiley.gif);
-        }
-        </style>
-        </head>
-        <body>
-        
-        <h1>This is a heading</h1>
-        <p>The ::before pseudo-element inserts content before the content of an element.</p>
-        
-        <h1>This is a heading</h1>
-        
-        </body>
-        <style>
-            ::marker { 
-              color: rgb(14, 187, 92);
-              font-size: 23px;
-            }
-            </style>
-            </head>
-            <body>
-            
-            <ul>
-              <li>Coffee</li>
-              <li>Tea</li>
-              <li>Milk</li>
-            </ul>
-            
-            <ol>
-              <li>First</li>
-              <li>Second</li>
-              <li>Third</li>
-            </ol>
-            
-            </body>
-            <style>
-                ::selection {
-                  color: rgb(94, 255, 0);
-                  background: rgb(255, 0, 157);
-                }
-                </style>
-                </head>
-                <body>
-                
-                <h1>Selection pseudo-element</h1>
-                
-                <p>This is a paragraph.</p>
-                <div>This is some text in a div element.</div>
-                
-                </body>
-                <style>
-                    #customers {
-                      font-family: Arial, Helvetica, sans-serif;
-                      border-collapse: collapse;
-                      width: 75%;
-                    }
-                    
-                    #customers td, #customers th {
-                      border: 1px solid #ddd;
-                      padding: 8px;
-                    }
-                    
-                    #customers tr:nth-child(even){background-color: #f2f2f2;}
-                    
-                    #customers tr:hover {background-color: #ddd;}
-                    
-                    #customers th {
-                      
-                      text-align: left;
-                      background-color: #04AA6D;
-                      color: white;
-                    }
-                    </style>
-                    </head>
-                    <body>
-                    
-                    <h1>A Fancy Table</h1>
-                    
-                    <table id="customers">
-                      <tr>
-                        <th>Company</th>
-                        <th>Contact</th>
-                        <th>City</th>
-                      </tr>
-                      <tr>
-                        <td>Infosys</td>
-                        <td>narayanamurthy</td>
-                        <td>mysore</td>
-                      </tr>
-                      <tr>
-                        <td>wipro</td>
-                        <td>Christhfer</td>
-                        <td>bangalore</td>
-                      </tr>
-                      <tr>
-                        <td>datalyzer</td>
-                        <td>purushottham</td>
-                        <td>Mangalore</td>
-                      </tr>
-                      <tr>
-                        <td>mphasis</td>
-                        <td>Roland</td>
-                        <td>mandya</td>
-                      </tr>
-                      <tr>
-                        <td>accenture</td>
-                        <td>Helen</td>
-                        <td>bidar</td>
-                      </tr>
-                      <tr>
-                        <td>TCS</td>
-                        <td>Philip</td>
-                        <td>Gadag</td>
-                      </tr>
-                      <tr>
-                        <td>tietoevry</td>
-                        <td>Yoshi</td>
-                        <td>hubli</td>
-                      </tr>
-                      <tr>
-                        <td>capgemini</td>
-                        <td>Giovanni</td>
-                        <td>ramnagar</td>
-                      </tr>
-                      <tr>
-                        <td>tech mahindra</td>
-                        <td>Simon</td>
-                        <td>belur</td>
-                      </tr>
-                      <tr>
-                        <td>one point one</td>
-                        <td>Marie</td>
-                        <td>hassan</td>
-                      </tr>
-                    </table>
-                    
-                    </body>
+
+               
 </html>
