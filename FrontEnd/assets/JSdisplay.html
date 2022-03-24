@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Display</title>
+</head>
+<body>
+    <p id="Name"></p>
+    <p id="student"></p>
+    <p id="student1"></p>
+    <p id="type"></p>
+    <script>
+        var name = "BCE";
+        const StudDetails=
+        {
+            studid:100,
+            studname:"Roja",
+            studbranch:"CS"
+        };
+        document.getElementById("Name").innerHTML=name;
+        document.getElementById("student").innerHTML="student name is" +StudDetails.studname;
+        document.getElementById("student").innerHTML="student id is" +StudDetails.studid;
+        document.getElementById("studname1").innerHTML=StudDetails.studname + "is in" + StudDetails.studbranch + "department";
+        document.getElementById("type").innerHTML=
+        typeof "hi" + "<br>" + typeof 10
+        + "<br>" +typeof(null);
+    </script>
+</body>
+</html>

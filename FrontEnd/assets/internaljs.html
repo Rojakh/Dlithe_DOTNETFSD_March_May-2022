@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<body>
+<form onsubmit="inline(); 'return'; false">
+Password:
+<input type = "password">
+Message:
+<textarea rows="2" cols="50">
+</textarea>
+<input type = "submit">
+</form>
+<script>
+function inline(){
+var password = document.getElementsByTagName("input")[0].value;
+var input = document.getElementsByTagName("textarea")[0];
+if (password != ""){
+input.value = "Your password has been successfully submitted.";
+}
+}
+</script>
+</body>
+</html>
