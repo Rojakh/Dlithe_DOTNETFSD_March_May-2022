@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+    
+        var fruits=["apple","banana","mango","orange"];
+        document.write(fruits+"<br>");
+        document.write(fruits.length + "<br>"+"<hr>");
+
+        document.write(fruits.push("watermelon","guava"))
+        document.write(fruits + "<br>");
+        document.write(fruits.length + "<br>"+"<hr>");
+
+        fruits.unshift("jackfruit");
+        document.write(fruits+"<br>"+"<hr>");
+
+        var last=fruits.pop();
+        document.write(last+"<br>");
+        document.write(fruits+"<br>"+"<hr>");
+
+        var first=fruits.shift();
+        document.write(first+"<br>");
+        document.write(fruits+"<br>"+"<hr>");
+
+        var apps=["Whatsapp","Facebook","Instagram","Twitter"];
+        document.write(apps+"<br>");
+        apps.splice(3,0,'Snapchat');
+        document.write(apps+"<br>");
+        apps.splice(4,1,'VN');
+        document.write(apps+"<br>"+"<hr>");
+        apps.splice(3,1,'gpay','phonepay');
+        document.write(apps+"<br>"+"<hr>");
+
+        var numbers1=["zero","one","two","three","four"];
+        var numbers2=["five","six","seven","eight"];
+        var numbers=numbers1.concat(numbers2);
+        document.write(numbers+"<br>");
+        var num=numbers.concat("nine","ten");
+        document.write(num+"<br>");
+        var num1=num.concat("eleven","twelve");
+        document.write(num1+"<br>"+"<hr>");
+
+        var interateindex =num1.entries()
+        for(var item of interateindex)
+        {
+            document.write(item+"<br>");
+        }
+
+    </script>
+    
+</body>
+</html> 
