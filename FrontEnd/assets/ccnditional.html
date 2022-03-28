@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statements</title>
+</head>
+<body>
+    <script>
+        var A=100;
+        var B=300;
+        var C=400;
+        var D=500;
+        
+        if(A>B&&A>C&&A>D)
+        {
+            document.write("A is greater<br>");
+            
+        }
+        else if(B>C&&C>D)
+        {
+            document.write("B is greater<br>");
+        }
+        else
+        {
+            document.write("D is greater<br>");
+        }
+        document.write("<hr>");
+var i = 10; 
+if (i == 10) {
+  if (i < 15)
+    document.write("i is smaller than 15<br>");
+  if (i < 12)
+    document.write("i is smaller than 12 too <br>");    
+  else
+    document.write("i is greater than 15");
+}
+document.write("<hr>");
+var Branch="Mechanical";
+switch(Branch)
+{
+   case"Electrical":document.write("she is Electrical student");
+                    break;
+   case"Computer Science":document.write("she is Computer Science student");
+                          break;
+   case"Mechanical":document.write("she is Mechanical student");
+                    break;  
+    default:document.write(Invalid);   
+            break;          
+}
+</script>
+    
+
+</body>
+</html>

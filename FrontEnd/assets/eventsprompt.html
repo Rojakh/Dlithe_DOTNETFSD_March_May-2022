@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Prompt</title>
+</head>
+<style>
+   body{
+       background-image:url("nature.jpg");
+       background-repeat: 1400px 700px;
+   }
+</style>
+<body>
+    <button type="submit" onclick="submit()">submit</button>
+    <button type="submit" onclick="AskName()">AskName</button>
+    <button type="submit" onclick="branches()">View branches</button>
+    <button type="submit" onclick="ChangeAnchorAttributes()">Anchors</button>
+    <button type="submit" onclick="ChangeParaContent()">Places</button>
+    <button type="submit" onclick="Infosys()">Infosys</button>
+     <ul id="List">
+         <li>Computer Science</li>
+         <li>Electricals</li>
+         <li>Civil</li>
+         <li>Mechanical</li>
+     </ul>
+     <hr>
+     <a id="myAnchor" href="https://www.google.com">google</a>
+     <br>
+     <p id="para" style="color:rgb(238, 20, 122)"></p>
+     <p>Hello world!! im going to<i id="places">places</i></p>
+     <p onclick="Infosys()">Infosys</p>
+    <script>
+        function Infosys()
+        {
+          window.open("https://www.Infosys.com")
+        }
+        function ChangeParaContent()
+        {
+            var placename=document.getElementById("enter the place name").innerHTML;
+            document.getelementById("places").value;
+        }
+        function ChangeAnchorAttributes()
+        {
+            document.getElementById("myAnchor").innerHTML="Dlithe";
+            document.getElementById("myAnchor").href="https://www.Dlithe.com";
+            document.getelementById("myAnchor").target="_blank";
+            document.getelementById("myAnchor").title="Dlithe";
+        }
+        function branches()
+        {
+            var listitems=document.getElementById("List").innerHTML;
+            document.getElementById("para").innerhtml=listitems;
+        }
+        function submit()
+        {
+            var msg=confirm("exit")
+            if(msg){
+                alert("ok Bye.")
+                window.location="https://www.google.com";
+            }
+            else{
+                alert("Thank you")
+            }
+        }
+        function AskName()
+        {
+            var name=prompt("enter your name");
+            alert("Hello " + name)
+        }
+    </script>
+</body>
+</html>

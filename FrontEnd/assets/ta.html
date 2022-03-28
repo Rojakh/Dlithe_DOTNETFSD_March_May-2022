@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<style>
+    #Students{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width:75%;
+    }
+    #Students td,#Students th{
+        border: 2px solid red;
+        padding:"10px";
+    }
+    #Students tr:nth-child(even){background-color: darkgoldenrod;}
+    #Students tr:hover{background-color: darkviolet;}
+    #Students th {
+        text-align: left;
+        background-color: aqua;
+        color: darkseagreen;
+    }
+</style>
+<body>
+    <h1>Student Details</h1>
+    <table id="Students">
+    
+
+        <tr>
+            <th>Name</th>
+            <th>id</th>
+            <th>mobile</th>
+        </tr>
+        <tr>
+            <td>roja</td>
+            <td>01</td>
+            <td>8073523325</td>
+        </tr>
+        <tr>
+            <td>sanju</td>
+            <td>02</td>
+            <td>6926454275</td>
+        </tr>
+        <tr>
+            <td>rohith</td>
+            <td>03</td>
+            <td>5387649946</td>
+        </tr>
+        <tr>
+            <td>janu</td>
+            <td>04</td>
+            <td>4387649946</td>
+        </tr>
+    </table>
+</body>
+</html>

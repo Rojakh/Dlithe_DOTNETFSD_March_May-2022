@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+ <style>
+     body{
+          background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+    margin: 50px;
+    text-align: center;
+    align: center;
+    }
+    input{
+    width: 15%;
+    margin: 8px;
+    padding: 7px 10px;
+    display: inline-block;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+    }
+    button{
+    background-color:#4CAF50;
+    width: 10%;
+    padding: 9px 5px;
+    margin:5px 0;
+    cursor:pointer;
+    border:none;
+    color:#e9eff3;
+    margin-left: 80px;
+    }
+     
+    button:hover{
+    opacity:0.8;
+    }
+     
+    #un,#pwd,#em,#mn,#fm{
+    font-family:'Lato', sans-serif;
+    color: rgb(22, 212, 124);
+    }
+     
+    #em{
+    margin-left:30px;
+    }
+ </style>
+<body bgcolor="#E6E6FA">
+<h2>Registration Form</h2>
+ 
+<label  id="un">Username :</label>
+<input type="text" name="uname" required><br/>
+ 
+<label  id="pwd">Password :</label>
+<input type="password" name="pass" required><br/>
+ 
+<label  id="em">Email :</label>
+<input type="text" name="email" required ><br/>
+ 
+<label  id="mn">Mobile No :</label>
+<input type="text" name="mno" required><br/>
+ 
+<button type="submit" onclick="save()">Register</button>
+<a href="simplewebpage.html">Back to Home</a>
+ 
+</form>
+ 
+<script>
+function save(){
+var user = document.getElementById("user").value;
+var pwd = document.getElementById("pwd").value;
+alert("username"+user+"password"+pwd);
+}
+</script>
+ 
+</body>
+</html>
