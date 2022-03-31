@@ -29,6 +29,7 @@
      <a id="myAnchor" href="https://www.google.com">google</a>
      <br>
      <p id="para" style="color:rgb(238, 20, 122)"></p>
+     <input type="text" id="pname" placeholder="Enter the place name">
      <p>Hello world!! im going to<i id="places">places</i></p>
      <p onclick="Infosys()">Infosys</p>
     <script>
@@ -38,8 +39,8 @@
         }
         function ChangeParaContent()
         {
-            var placename=document.getElementById("enter the place name").innerHTML;
-            document.getelementById("places").value;
+            var placename=document.getElementById("pname").value;
+            document.getElementById("places").innerHTML=placename;
         }
         function ChangeAnchorAttributes()
         {

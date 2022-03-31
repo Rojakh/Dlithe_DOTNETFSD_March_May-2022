@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<style>
+     #student{
+         font-family: Arial, Helvetica, sans-serif;
+         border-collapse: collapse;
+         width:75%;
+     }
+     #student td,#student #th{
+         border: 1px solid black;
+         padding:8px;
+     }
+     #student tr:nth-child(odd){background-color: aqua;}
+     #student tr:hover{background-color: forestgreen;}
+     #student th{
+         text-align: left;
+         background-color: antiquewhite;
+         color:aquamarine;
+     }
+</style>
+<body>
+
+    <h1>Student Details</h1>
+    <table id="student">
+        <tr>
+            <th>NAME</th>
+            <th>ID</th>
+            <th>Branch</th>
+            <th>Mobile</th>
+        </tr>
+        <tr>
+            <td>roja</td>
+            <td>01</td>
+            <td>CS</td>
+            <td>3464613211</td>
+        </tr>
+        <tr>
+            <td>nischitha</td>
+            <td>02</td>
+            <td>ec</td>
+            <td>3464613212</td>
+        </tr>
+        <tr>
+            <td>ramu</td>
+            <td>03</td>
+            <td>CS</td>
+            <td>3264613211</td>
+        </tr>
+        <tr>
+            <td>anoop</td>
+            <td>04</td>
+            <td>Civil</td>
+            <td>3464613233</td>
+        </tr>
+    </table>
+</body>
+</html>

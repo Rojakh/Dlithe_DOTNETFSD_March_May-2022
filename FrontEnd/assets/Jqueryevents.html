@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Show or Hide in JQuery</title>
+<style>
+body{
+    background-color: lightcoral;
+}
+#btn1{
+    background-color: aqua;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn2{
+    background-color: aqua;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn3{
+    background-color: aqua;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;}
+#btn4{
+    background-color: aqua;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;}
+    #btn5{
+    background-color: aqua;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;}
+    #btn6{
+    background-color: aqua;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;}
+    </style>
+<h1>Butterfly</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#btn7').click(function(){
+   		$('#imgDiv1','imgDiv2','#imgDiv3','#imgDiv4').hide();
+    });
+  
+    $('#btn8').click(function(){
+   		$('#imgDiv1','#imgDiv2','#imgDiv3','#imgDiv4').hide();
+    });
+    $('#btn3').click(function(){
+    $("#imgDiv").fadeOut(3000);
+    });
+    $('#btn4').click(function(){
+    $("#imgDiv").fadeIn(3000);
+    });
+    $("#btn5").click(function(){
+    $("#imgDiv").fadeTo("slow",0.5);
+    });
+    $("#btn6").click(function(){
+    $("#imgDiv").fadeToggle(3000);
+    }); 
+});
+</script>
+</head>
+<style>
+    .butterfly,.pic1,.pic2,.pic3,.pic4,.pic5,.pic6,.pic7{
+        width:200px;
+        height:200px;
+    }
+</style>
+<body>
+<div id="imgDiv">
+	<img src="butterfly.jpg" class="butterfly" alt="Show/Hide Image" /></div>
+<div id="imgDiv1">
+	<img src="old days1.jpg" class="pic1" alt="Show/Hide Image" />
+</div>
+<div id="imgDiv2">
+	<img src="olddays2.jpg" class="pic2" alt="Show/Hide Image" />
+</div>
+<div id="imgDiv3">
+	<img src="olddays3.jpg" class="pic3" alt="Show/Hide Image" />
+</div>
+<div id="imgDiv4">
+	<img src="olddays4.jpg" class="pic4" alt="Show/Hide Image" />
+</div>
+<div id="imgDiv5">
+	<img src="newday1.jpg" class="pic5" alt="Show/Hide Image" />
+</div>
+<div id="imgDiv6">
+	<img src="newday2.jpg" class="pic6" alt="Show/Hide Image" />
+</div>
+<div id="imgDiv7">
+	<img src="newday3.jpg" class="pic7" alt="Show/Hide Image" />
+</div>
+<button type="button" id="btn1">Hiding a picture</button>
+<button type="button" id="btn2">Showing a picture</button><br>
+<button type="button" id="btn3">Fade Out</button>
+<button type="button" id="btn4">Fade In</button>
+<button type="button" id="btn6">Toggle</button>
+<button type="button" id="btn5">Fade To</button>
+<button type="button" id="btn7">click here to see CurrentDays</button>
+<button type="button" id="btn8">click here to see OldDays</button>
+</body>
+</html>

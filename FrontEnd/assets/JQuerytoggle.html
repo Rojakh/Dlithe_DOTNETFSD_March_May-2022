@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery TOGGLE</title>
+    <h2>Jquery Toggle</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(3000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Toggle are used to get the output of both fade in and fade out in one click</p>
+
+<button>Click here to fade in/out boxes</button><br><br>
+
+<div id="div1" style="width:150px;height:150px;background-color:rgb(0, 255, 85);"></div>
+<br>
+<div id="div2" style="width:150px;height:150px;background-color:rgb(70, 0, 128);"></div>
+<br>
+<div id="div3" style="width:150px;height:150px;background-color:rgb(224, 176, 42);"></div>
+
+</body>
+</html><hr>
+<head>
+    
+    

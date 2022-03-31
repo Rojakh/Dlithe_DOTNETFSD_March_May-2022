@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY CONCEPTS</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<h2>Fade Out</h2>
+<script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#div4").fadeOut();
+        $("#div5").fadeOut("slow");
+        $("#div6").fadeOut(3000);
+      });
+    });
+    </script>
+    </head>
+    <body>
+    
+    <p>This code is for fade out the boxes</p>
+    
+    <button>Click to fade out boxes</button><br><br>
+    
+    <div id="div4" style="width:150px;height:150px;background-color:rgb(255, 0, 221);"></div><br>
+    <div id="div5" style="width:150px;height:150px;background-color:rgb(34, 216, 240);"></div><br>
+    <div id="div6" style="width:150px;height:150px;background-color:rgb(25, 212, 66);"></div>
+    
+</body>
