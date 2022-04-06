@@ -1,7 +1,28 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#img").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'
+    });
+  });
+});
+</script> 
+</head>
+<body>
 
-public class Main {
-    public static void main(String[] args) {
-      String myStr = "Hello planet earth, you are a great planet.";
-      System.out.println(myStr.IndexOf("e", 5));
-    }
-  }
+<button>Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div id="img">
+  <img src="butterfly.jpg" style="width:300px;height:300px;" alt="building"/>
+</div>
+
+</body>
+</html>

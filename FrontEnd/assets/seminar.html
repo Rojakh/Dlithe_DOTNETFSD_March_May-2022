@@ -1,63 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables</title>
-</head>
-<style>
-     #student{
-         font-family: Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width:75%;
-     }
-     #student td,#student #th{
-         border: 1px solid black;
-         padding:8px;
-     }
-     #student tr:nth-child(odd){background-color: aqua;}
-     #student tr:hover{background-color: forestgreen;}
-     #student th{
-         text-align: left;
-         background-color: antiquewhite;
-         color:aquamarine;
-     }
-</style>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <title>Bootstrap website</title>  
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>  
+  body{
+    background-color: rgb(221, 228, 194);
+  }
+
+    .carousel-inner > .item > img 
+     
+     {  
+        width: 100%;  
+        height:300px;
+        margin: auto;  
+    }  
+  </style>  
+  
+</head>  
 <body>
 
-    <h1>Student Details</h1>
-    <table id="student">
-        <tr>
-            <th>NAME</th>
-            <th>ID</th>
-            <th>Branch</th>
-            <th>Mobile</th>
-        </tr>
-        <tr>
-            <td>roja</td>
-            <td>01</td>
-            <td>CS</td>
-            <td>3464613211</td>
-        </tr>
-        <tr>
-            <td>nischitha</td>
-            <td>02</td>
-            <td>ec</td>
-            <td>3464613212</td>
-        </tr>
-        <tr>
-            <td>ramu</td>
-            <td>03</td>
-            <td>CS</td>
-            <td>3264613211</td>
-        </tr>
-        <tr>
-            <td>anoop</td>
-            <td>04</td>
-            <td>Civil</td>
-            <td>3464613233</td>
-        </tr>
-    </table>
-</body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" >  
+    <div class="container-fluid">  
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+        <a class="navbar-brand" href="#">IT COMPANIES</a>  
+      </div>
+       
+        <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav ">  
+        <li class="active"><a href="#">Home</a></li>  
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Companies <span class="caret"></span></a>  
+          <ul class="dropdown-menu">  
+            <li><a href="https://www.infosys.com/">Infosys</a></li>  
+            <li><a href="https://www.wipro.com/">Wipro</a></li>  
+            <li><a href="https://www.mphasis.com/">Mphasis</a></li>
+            <li><a href="https://www.mindtree.com/">Mind tree</a></li> 
+          </ul>  
+        </li>  
+        <li><a href="https://www.wellsfargojobs.com/">Career</a></li>    
+      </ul> 
+      <ul class="nav navbar-nav navbar-right">  
+        <li><a href="register.html">Register</a></li>  
+        <li><a href="login.html">Login</a></li>  
+      </ul>   
+    </div> 
+    </div> 
+ 
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid">  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">    
+      <ol class="carousel-indicators">  
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>  
+        <li data-target="#myCarousel" data-slide-to="1"></li>  
+        <li data-target="#myCarousel" data-slide-to="2"></li> 
+        <li data-target="#myCarousel" data-slide-to="3"></li> 
+      </ol>  
+     
+      <div class="carousel-inner" role="listbox">  
+        <div class="item active" style="background-color: aliceblue;">  
+          <img src="infosys.png" alt="Infosys" >
+          <h3 style="text-align: center;">Infosys</h3>  
+        <p style="text-align: center;"> Infosys stands for Information Systems</p>    
+        </div>  
+    
+        <div class="item" style="background-color: aliceblue;">  
+          <img src="wipro.png" alt="wipro" > 
+          <h3 style="text-align: center;">Wipro</h3>
+        <p style="text-align: center;">WIPRO stands for Western India Products</p>   
+        </div>  
+        
+        <div class="item" style="background-color: aliceblue;">  
+          <img src="mphasis.png" alt="mphasis" >
+          <h3 style="text-align: center;">Mphasis</h3>
+        <p style="text-align: center;">Mphasis Limited is an Indian multinational information technology services and consulting company</p>    
+        </div> 
+        
+        <div class="item" style="background-color: aliceblue;">  
+          <img src="mindtree.png" alt="mindtree" >
+          <h3 style="text-align: center;">MindTree</h3>
+        <p style="text-align: center;">Mindtree Ltd is an Indian multinational information technology services and consulting company</p>    
+        </div> 
+      </div>  
+    
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">  
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>  
+        <span class="sr-only">Previous</span>  
+      </a>  
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> 
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>  
+        <span class="sr-only">Next</span>  
+      </a> 
+  
+  </div> 
+  </div> 
+  <div class="container">  
+    <h2>Companies</h2>  
+    <ul class="nav nav-tabs navbar-right">  
+      <li class="active"><a data-toggle="tab" href="#tab1">Infosys</a></li>    
+      <li><a data-toggle="tab" href="#tab2">Wipro</a></li>  
+      <li><a data-toggle="tab" href="#tab3">Mphasis</a></li>
+      <li><a data-toggle="tab" href="#tab4">Mindtree</a></li>  
+    </ul>  
+    <div class="tab-content">  
+      <div id="tab1" class="tab-pane fade in active">  
+        <h3>Infosys</h3>  
+        <p>Infosys Limited is an Indian multinational information technology company that provides business consulting, information technology and outsourcing services.</p>  
+      </div>  
+      <div id="tab2" class="tab-pane fade">  
+        <h3>Wipro</h3>  
+        <p>Wipro Limited, formerly known as the Western Indian Palm Refined Oil Limited, is an Indian multinational information technology services and consulting company headquartered in Bangalore. Apart from its core information technology business, the company also has a presence in FMCG and lighting.</p>  
+      </div>  
+      <div id="tab3" class="tab-pane fade">  
+        <h3>Mphasis</h3>  
+        <p>Mphasis Limited is an Indian multinational information technology services and consulting company based in Bangalore. The company provides infrastructure technology and applications outsourcing services, as well as architecture guidance, application development and integration, and application management services.</p>  
+      </div>  
+      <div id="tab4" class="tab-pane fade">  
+        <h3>Mindtree</h3>  
+        <p>Mindtree Ltd is an Indian multinational information technology services and consulting company, headquartered in Bangalore. It is a part of the Larsen & Toubro Group.</p>  
+      </div>  
+    </div>  
+  </div> 
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+</body>  
 </html>

@@ -1,0 +1,61 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+$('.button').click(function() {
+    $('.box').animate(
+      { deg: 3600 },
+      {
+        duration: 1200,
+        step: function(now) {
+          $(this).css({ transform: 'rotate(' + now + 'deg)' });
+        }
+      }
+    );
+  });
+});
+  </script><script> 
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    var div = $("div");  
+    div.animate({left: '250px'}, "slow");
+    div.animate({fontSize: '30px'}, "slow");
+  });
+});
+</script> 
+  <style>
+      body{
+          background-color: olive;
+      }
+.box{
+height:300px;
+width:300px;
+line-height: 200px;
+background-color: rgb(255, 0, 128);
+    }
+.button{
+width: 200px;
+cursor: pointer;
+border: 1px solid rgb(248, 48, 48);
+border-radius:5px;
+padding: 8px;
+background-color:rgb(36, 240, 240);
+}
+.btn1{
+width: 200px;
+cursor: pointer;
+border: 1px solid rgb(248, 48, 48);
+border-radius:5px;
+padding: 8px;
+background-color:rgb(36, 240, 240);}
+
+</style>
+  <body>
+      
+      <button type="button" class="button">click me to get rotate </button>
+      <button type="button" class="box">round</button><br>
+      <button type="button" class="btn1"> click here to start animation </button>
+
+<div style="background:#d4248b;height:100px;width:200px;position:absolute;">WELCOME TO MY WORLD</div>
+  </body>

@@ -15,6 +15,7 @@ body{
     background-color: aqua;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
 }
 #btn3{
     background-color: aqua;
@@ -36,26 +37,15 @@ body{
 <h1>Butterfly</h1>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
+
 $(document).ready(function(){
-    $('#btn7').click(function(){
+    $('#btn1').click(function(){
    		$('#imgDiv1','imgDiv2','#imgDiv3','#imgDiv4').hide();
     });
   
-    $('#btn8').click(function(){
-   		$('#imgDiv1','#imgDiv2','#imgDiv3','#imgDiv4').hide();
+    $('#btn2').click(function(){
+   		$('#imgDiv5','#imgDiv6','#imgDiv7').hide();
     });
-    $('#btn3').click(function(){
-    $("#imgDiv").fadeOut(3000);
-    });
-    $('#btn4').click(function(){
-    $("#imgDiv").fadeIn(3000);
-    });
-    $("#btn5").click(function(){
-    $("#imgDiv").fadeTo("slow",0.5);
-    });
-    $("#btn6").click(function(){
-    $("#imgDiv").fadeToggle(3000);
-    }); 
 });
 </script>
 </head>
@@ -63,12 +53,10 @@ $(document).ready(function(){
     .butterfly,.pic1,.pic2,.pic3,.pic4,.pic5,.pic6,.pic7{
         width:200px;
         height:200px;
+        display: inline-block;
     }
 </style>
 <body>
-<div id="imgDiv">
-	<img src="butterfly.jpg" class="butterfly" alt="Show/Hide Image" /></div>
-<div id="imgDiv1">
 	<img src="old days1.jpg" class="pic1" alt="Show/Hide Image" />
 </div>
 <div id="imgDiv2">
@@ -89,13 +77,7 @@ $(document).ready(function(){
 <div id="imgDiv7">
 	<img src="newday3.jpg" class="pic7" alt="Show/Hide Image" />
 </div>
-<button type="button" id="btn1">Hiding a picture</button>
-<button type="button" id="btn2">Showing a picture</button><br>
-<button type="button" id="btn3">Fade Out</button>
-<button type="button" id="btn4">Fade In</button>
-<button type="button" id="btn6">Toggle</button>
-<button type="button" id="btn5">Fade To</button>
-<button type="button" id="btn7">click here to see CurrentDays</button>
-<button type="button" id="btn8">click here to see OldDays</button>
+<button type="button" id="btn1">click here to see CurrentDays</button>
+<button type="button" id="btn2">click here to see OldDays</button>
 </body>
 </html>
