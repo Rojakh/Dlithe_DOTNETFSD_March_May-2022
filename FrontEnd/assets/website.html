@@ -1,7 +1,7 @@
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
-  <title>Welcome to Your Trip</title>  
+  <title>Bootstrap website</title>  
   <meta charset="utf-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1">  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
@@ -19,16 +19,12 @@
         height:300px;
         margin: auto;  
     }  
-    .trail
-        {
-            text-align: center;
-            border:2px solid rgb(243, 93, 193);
-            
-        }
   </style>  
   
 </head>  
 <body>
+
+
 <nav class="navbar navbar-inverse navbar-fixed-top" >  
     <div class="container-fluid">  
       <div class="navbar-header">
@@ -45,15 +41,14 @@
         <li class="active"><a href="#">Home</a></li>  
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Flights <span class="caret"></span></a>  
           <ul class="dropdown-menu">  
-            <li><a href="https://www.cleartrip.com/">Akasa Air</a></li>  
-            <li><a href="https://www.cleartrip.com/">Air India Express</a></li>  
-            <li><a href="https://www.cleartrip.com/">Air India</a></li>
-            <li><a href="https://www.cleartrip.com/">Air Asia India</a></li> 
+            <li><a href="https://www.infosys.com/">Akasa Air</a></li>  
+            <li><a href="https://www.wipro.com/">Air India Express</a></li>  
+            <li><a href="https://www.mphasis.com/">Air India</a></li>
+            <li><a href="https://www.mindtree.com/">Air Asia India</a></li> 
           </ul>  
         </li>  
-        <li><a href="#container">Guide</a></li>
-        <li><a href="#">About</a></li> 
-        <li><a href="#container1">Contact Us</a></li>   
+        <li><a href="#row">Guide</a></li>
+        <li><a href="#jumbotron text-center">About</a></li>     
       </ul> 
       <ul class="nav navbar-nav navbar-right">  
         <li><a href="register.html">Register</a></li>  
@@ -105,14 +100,14 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>  
         <span class="sr-only">Next</span>  
       </a> 
+  
   </div> 
-  </div>
-  <h1 class="trail">Create a memory to remember</h1> 
+  </div> 
   <br>
-  <div id="container"> 
-    <br>
-    <br>
-
+  <br>
+  <br>
+  <br>
+  <div class="container">  
     <h1>Welcome to your Trip</h1>  
     <ul class="nav nav-tabs navbar-right">  
       <li class="active"><a data-toggle="tab" href="#tab1">Abay river</a></li>    
@@ -154,98 +149,4 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
  <br>
  <hr>
- <body>
-  
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    * {
-      box-sizing: border-box;
-    }
-    
-    
-    input[type=text], select, textarea {
-      width: 40%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: vertical;
-    }
-    
-    input[type=submit] {
-      background-color: #471fa3;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      cursor: pointer;
-    }
-    
-    input[type=submit]:hover {
-      background-color: #45a049;
-    }
-    
-    
-    #container1 {
-      border-radius: 5px;
-      background-color:bisque;
-      padding: 10px;
-    }
-    
-    
-    .column {
-      float: left;
-      width: 50%;
-      margin-top: 6px;
-      padding: 20px;
-    }
-    
-    
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
-    
-    @media screen and (max-width: 600px) {
-      .column, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-      }
-    }
-    </style>
-    </head>
-    <body>
-    
-    
-    <div id="container1">
-      <div style="text-align:center">
-        <br>
-        <h2>Contact Us</h2>
-      </div>
-      <div class="row">
-        <div class="column">
-          <img src="mountain.jpg" style="width:100%">
-        </div>
-        <div class="column">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
-            <label for="email">Email addr</label>
-            <input type="text" id="email" name="email" placeholder="Your email id.."><br>
-            
-            <label for="subject">Lit Subject</label>
-            <input type="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea><br>
-            <input type="submit" value="Submit">
-        </div>
-      </div>
-    </div>
-</body>
- </html>
  
