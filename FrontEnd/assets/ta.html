@@ -36,12 +36,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
-      </button>
-        <a class="navbar-brand" href="#">Welcome to your Tour</a>  
+      </button>   
       </div>
-       
+     
         <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav ">  
+        <!--Navbar starts-->
+      <ul class="nav navbar-nav "> 
+        <!--creating a list--> 
         <li class="active"><a href="#">Home</a></li>  
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Flights <span class="caret"></span></a>  
           <ul class="dropdown-menu">  
@@ -51,24 +52,25 @@
             <li><a href="https://www.cleartrip.com/">Air Asia India</a></li> 
           </ul>  
         </li>  
-        <li><a href="#container">Guide</a></li>
-        <li><a href="#">About</a></li> 
-        <li><a href="#container1">Contact Us</a></li>   
+        <li><a href="#container">Guide</a></li> 
+        <li><a href="#about-section">About</a></li>   
       </ul> 
       <ul class="nav navbar-nav navbar-right">  
-        <li><a href="register.html">Register</a></li>  
-        <li><a href="login.html">Login</a></li>  
-      </ul>   
+        <li><a href="#container1">Contact</a></li> 
+      </ul>
+      <!--list ends-->   
     </div> 
     </div> 
  
   </nav>
+  <!--navbar ends-->
   <br>
   <br>
   <br>
   <br>
 
-  <div class="container-fluid">  
+  <div class="container-fluid"> 
+    <!--image carousel starts--> 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">    
       <ol class="carousel-indicators">  
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>  
@@ -107,14 +109,30 @@
       </a> 
   </div> 
   </div>
-  <h1 class="trail">Create a memory to remember</h1> 
+  <!--image carousel ends-->
+  <!--taking a class as container-->
+  <div class="container">
+    <div class="row" style="height: 350px; background-color:#d5e4ab;">
+      <div class="p-6 col-4">
+      </div>
+      <div class="col-4 p-6 text-white" style="text-align: center;font-family: 'Times New Roman', Times, serif;">
+        <h1>Create a memory to your destination</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto tempora nesciunt consequuntur modi excepturi neque consectetur ex provident? Ad veniam rerum officiis ducimus corporis deleniti amet. Nihil assumenda dolorem error.</p>
+        <button type="button" class="btn btn-warning btn-lg">My Travel Logs</button>
+      </div>
+      <div class="col-4 p-6">
+      </div>
+    </div>
+  </div>
   <br>
   <div id="container"> 
     <br>
     <br>
 
-    <h1>Welcome to your Trip</h1>  
-    <ul class="nav nav-tabs navbar-right">  
+    <h1>Welcome to your Trip</h1> 
+    <!--Navbar starts--> 
+    <ul class="nav nav-tabs navbar-right"> 
+      <!--creating a list--> 
       <li class="active"><a data-toggle="tab" href="#tab1">Abay river</a></li>    
       <li><a data-toggle="tab" href="#tab2">Lalibela</a></li>  
       <li><a data-toggle="tab" href="#tab3">Highlands</a></li> 
@@ -153,12 +171,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
  <br>
+ <!--navbar ends-->
  <hr>
  <body>
   
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+      /* Set a style for all buttons */
     body {
       font-family: Arial, Helvetica, sans-serif;
     }
@@ -167,7 +187,7 @@
       box-sizing: border-box;
     }
     
-    
+  /* Full-width input fields */
     input[type=text], select, textarea {
       width: 40%;
       padding: 12px;
@@ -176,7 +196,7 @@
       margin-bottom: 16px;
       resize: vertical;
     }
-    
+    /* styling for the buttton*/
     input[type=submit] {
       background-color: #471fa3;
       color: white;
@@ -189,10 +209,10 @@
       background-color: #45a049;
     }
     
-    
+    /*styling for the class container1*/
     #container1 {
       border-radius: 5px;
-      background-color:bisque;
+      background-color:rgb(186, 240, 240);
       padding: 10px;
     }
     
@@ -210,14 +230,6 @@
       display: table;
       clear: both;
     }
-    
-    
-    @media screen and (max-width: 600px) {
-      .column, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-      }
-    }
     </style>
     </head>
     <body>
@@ -228,11 +240,13 @@
         <br>
         <h2>Contact Us</h2>
       </div>
+      <!--taking a class selector row and column-->
       <div class="row">
         <div class="column">
           <img src="mountain.jpg" style="width:100%">
         </div>
         <div class="column">
+          <!--creating a labels and input type-->
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
             <label for="lname">Last Name</label>
@@ -246,6 +260,127 @@
         </div>
       </div>
     </div>
+    <style>
+    /* styling for our body*/
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+      
+      html {
+        box-sizing: border-box;
+      }
+      
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+      
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+      
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+      }
+      /*styling for container3*/
+      .container3 {
+        padding: 0 16px;
+      }
+      
+      .container3::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .title {
+        color: grey;
+      }
+      /* Set a style for all buttons */
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      .button:hover {
+        background-color: #555;
+      }
+      
+      </style>
+      </head>
+      <br>
+      <br>
+      <br>
+
+      <body>
+      
+      <div id="about-section">
+        <h1 style="text-align:center">About Us</h1>
+        <p style="text-align:center">Here's what they have to say</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="team1.jpg" alt="Jane" style="width:50%">
+            <div class="container3">
+              <h2>Janilia Doe</h2>
+              <p class="title">CEO & Founder</p>
+              <p>She is a CEO of this touring company.</p>
+              <p>janilia@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="team2.jpg" alt="Mike" style="width:50%">
+            <div class="container3">
+              <h2>Jacob Leo</h2>
+              <p class="title">Art Director</p>
+              <p>He is a art director of this company</p>
+               <p>jacob@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="team3.jpg" alt="John" style="width:50%">
+            <div class="container3">
+              <h2>George Leo</h2>
+              <p class="title">Designer</p>
+              <p>He is a designer of this company</p>
+              <p>george@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
 </body>
  </html>
  
