@@ -1,6 +1,6 @@
 #navbar 
 {
-    background-color: rgb(152, 212, 231);  
+    background-color: rgb(174, 238, 238);  
 }
 .p-5
 {
@@ -16,7 +16,7 @@ text-align: center;
 {
   border-style: groove;
   border-radius: 5px;
-  border-color: black;
+  border-color: rgb(238, 234, 234);
   border-width: 2px;
   background-color: transparent;
 
