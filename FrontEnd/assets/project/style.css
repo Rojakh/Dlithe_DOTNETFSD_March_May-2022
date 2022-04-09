@@ -1,0 +1,48 @@
+header{
+    background-image: url(assets/1.jpg);
+    position: relative;
+    height: 101vmin;
+
+}
+header .row .col-md-5{
+    position: relative;
+    margin-top: 20vmin;
+}
+header .row .col-md-7{
+    position: relative;
+    margin-top: 20vmin;       
+}
+header .row .col-md-7 img{
+    margin-left: 100px;
+}
+header .row .col-md-5 button{
+    position: relative;
+    margin-left: 130px;
+}
+.section-6{
+    position: relative;
+    background-image: url(assets/2.jpg);
+}
+.section-1{
+    position: relative;
+    background-image: url(assets/2.jpg);
+}
+.section-2{
+    position: relative;
+    background-image: url(assets/3.jpg);
+}
+.section-3{
+    position: relative;
+    background-image: url(assets/4.jpg);
+}
+.section-4{
+    position: relative;
+    background-image: url(assets/6.jpg);
+}
+.section-5{
+    position: relative;
+    background-image: url(assets/7.jpg);
+}
+footer{
+    background-image: url(assets/8.jpg);
+}
