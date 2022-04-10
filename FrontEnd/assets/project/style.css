@@ -19,21 +19,34 @@ header .row .col-md-5 button{
     position: relative;
     margin-left: 130px;
 }
-.section-6{
+.section-6 .row{
     position: relative;
-    background-image: url(assets/2.jpg);
+    background-image: url(assets/9.jpg);
+    background-repeat: no-repeat;
 }
 .section-1{
     position: relative;
     background-image: url(assets/2.jpg);
-}
+    
+} 
 .section-2{
     position: relative;
     background-image: url(assets/3.jpg);
+    
+}
+.section-2 .row .col-md-7 img{
+    position: relative;
+    height: 300px;
+    width: 600px;
 }
 .section-3{
     position: relative;
     background-image: url(assets/4.jpg);
+}
+.section-3 .row .col-md-6 img{
+    position: relative;
+    height: 300px;
+    width: 600px;
 }
 .section-4{
     position: relative;
@@ -43,6 +56,13 @@ header .row .col-md-5 button{
     position: relative;
     background-image: url(assets/7.jpg);
 }
+.section-5 .row .col-md-6 img{
+    position: relative;
+    height: 300px;
+    width: 600px;
+}
 footer{
     background-image: url(assets/8.jpg);
+  
+
 }
