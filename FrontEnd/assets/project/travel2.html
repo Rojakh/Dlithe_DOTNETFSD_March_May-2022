@@ -17,36 +17,37 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <header>
     <nav class="navbar navbar-expand-lg">
-      <nav class="navbar fixed-top navbar-dark  " style="background-color: #22223d;">
+      <nav class="navbar fixed-top navbar-dark "style="color:black">
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="ml-auto"></div>
-          <ul class="navbar-nav">
+        
+          <ul class="navbar-nav" style="margin-left:40px;margin-top: 40px;">
             <li class="nav-item active">
-              <a class="nav-link" style="color: white;" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" style="color: black; " href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: white;" href="#promotion">Guide</a>
+              <a class="nav-link" style="color: black;padding-left: 40px;" href="#Guide">Guide</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" style="color: white;" href="#about">Flights</a>
+              <a class="nav-link" style="color:  black;padding-left: 40px;" href="#Flights">Flights</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: white; " href=" #contact">About</a>
+              <a class="nav-link" style="color:  black;padding-left: 40px; " href=" #About">About</a>
             </li>
+            <input type="button" class="nav-link" value="Contact Us" style="margin-left: 800px; color:black;">
           </ul>
         </div>
       </nav>
       </div>
-      <div class="container-fluid" id="background">
+      <div class="container-fluid" id="home">
         <div class="row">
           <div class="col-md-5">
             <div class="p-5 text-black">
@@ -59,7 +60,7 @@
           </div>
           <div class="col-md-7"><br><br>
             <div>
-              <img src="assets/abay-river.jpg" style="background-size: cover;height: 400px;width: 600px;border-radius: 15px;">
+              <img src="assets/11.jpg" style="background-size: cover;height: 400px;width: 600px;border-radius: 15px;">
             </div>
           </div>
         </div>
@@ -87,7 +88,7 @@
   <br>
   <br>
     <!-- Section-1 contains popular menus section and cards -->
-    <section class="section-1">
+    <section class="section-1" id="Guide">
       <div class="container text-center">
         <br><br><br>
         </div>
@@ -126,7 +127,7 @@
       <div class="col-md-4 col-sm-12 text-center">
         <div class="card mr-2 d-inline-block " style="background-color: transparent; border: none;">
           <div class="card-img-top">
-            <img src="assets/highlands copy 2.jpg" class="img-fluid border-radius p-4" alt="">
+            <img src="assets/highlands copy 2.jpg" class="img-fluid border-radius p-4" alt="" style="height: 300px; width:500px;">
           </div>
           <div class="card-body">
             <h3 class="card-title">Highlands</h3>
@@ -139,8 +140,15 @@
         </div>
       </div>
       </div>
-
     </section>
+  
+    <section class="section-7">
+      <div> 
+        <i style="padding-top: 50vmin;font-size: 72px;" class="fa-solid fa-jet-fighter-up"></i>
+      <h1 style=" font-size: 72px;font-weight: bold;">See place you've </h1>
+      <h1 style="font-size: 72px; font-weight: bold;"><i> Never</i> been before</h1></div>
+    </section>
+    
     <section class="section-2 container-fluid p-0">
       <div class="container text-center">
         <div class="row">
@@ -165,13 +173,13 @@
     <br>
     <br>
     <br>
-    <section class="section-3 container-fluid p-0">
+    <section class="section-3 container-fluid p-0" id="About">
       <div class="container text-center">
         <div class="row">
 
           <div class="col-md-6">
-            <h1 style="color: black;">Choose anywhere you'd like to be</h1>
-            <h6 style="color: black;">The lands in Australia are often above the elevation of 500 m. These areas
+            <h1 style="color:white; padding-top: 30vmin;">Choose anywhere you'd like to be</h1>
+            <h6 style="color:white;">The lands in Australia are often above the elevation of 500 m. These areas
               often receive snowfall in winter. Most of the highlands lead up to large alpine or sub-alpine mountainous
               regions such as the Australian Alps, Snowy Mountains, Great Dividing Range, Northern Tablelands and Blue
               Mountains. The most mountainous region of Tasmania is the Central Highlands area, which covers most of the
@@ -184,35 +192,38 @@
             </h6>
           </div>
           <div class="col-md-6 col-sm-12">
-            <img src="assets/img6.jpeg">
+            <img src="assets/img6.jpeg" style="margin-top:20vmin;">
           </div>
         </div>
       </div>
     </section>
+
     <section class="section-4">
+      <h1 style="font-weight:bold; text-align: center;padding-top: 15vmin; font-size: 50px;">Here what they</h1>
+      <h1 style="font-weight:bold; text-align: center; font-size: 50px;">have to say..</h1>
       <div class="container text-center">
         <br><br><br>
       </div>
-      <div class="team row ">
+      <div class="row ">
         <div class="col-md-4 col-sm-12 text-center">
-          <div class="card mr-2 d-inline-block " style="background-color: transparent; border: none;">
+          <div class="card mr-2 d-inline-block " style="background-color: transparent; border:2px solid black; width:300px">
             <div class="card-img-top">
-              <i class="fa-solid fa-user"></i>
+              <i style="font-size:50px" class="fa-solid fa-user"></i>
             </div>
             <div class="card-body">
               <h3 class="card-title">Customer name</h3>
               <p class="card-text">
                 Lalibela is a town in the Amhara region of northern Ethiopia. It's known for its distinctive rock-cut
-                churches dating from the 12th and 13th centuries, which are pilgrimage sites for Coptic.
+                churches dating from the 12th and sites for Coptic.
               </p>
 
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-12 text-center">
-          <div class="card mr-2 d-inline-block " style="background-color: transparent; border: none;">
+          <div class="card mr-2 d-inline-block " style="background-color: transparent; border: 2px solid black;width:300px">
             <div class="card-img-top">
-              <i class="fa-solid fa-user"></i>
+              <i style=" font-size:50px" class="fa-solid fa-user"></i>
             </div>
             <div class="card-body">
               <h3 class="card-title">Customer name</h3>
@@ -224,17 +235,16 @@
             </div>
           </div>
         </div>
-      </div>
       <div class="col-md-4 col-sm-12 text-center">
-        <div class="card mr-2 d-inline-block " style="background-color: transparent; border: none;">
+        <div class="card mr-2 d-inline-block " style="background-color: transparent; border: 2px solid black;width:300px">
           <div class="card-img-top">
-            <i class="fa-solid fa-user"></i>
+            <i style=" font-size:50px"  class="fa-solid fa-user"></i>
           </div>
           <div class="card-body">
             <h3 class="card-title">Customer name</h3>
             <p class="card-text">
               Highlands or uplands are any mountainous region or elevated mountainous plateau. Generally speaking,
-              upland refers to ranges of hills, typically up to 500–600 m. Highland is usually reserved for ranges.
+              upland refers to ranges of hills, ually reserved for ranges.
             </p>
 
           </div>
@@ -243,6 +253,7 @@
       </div>
 
     </section>
+
     <section class="section-5 container-fluid p-0">
       <div class="container text-center">
         <div class="row">
@@ -250,17 +261,17 @@
           <div class="col-md-6">
             <form method="post">
              <fieldset>
-               <h1>Be Updated!</h1>
+               <h1 style="padding-top:10px;padding-bottom: 20px; font-weight: bold;">Be Updated!</h1>
                <input type="text" placeholder="First name"><br><br>
                <input type="text" placeholder="Last name"><br><br>
                <input type="email" placeholder="Email"><br><br>
-               <input type="text" placeholder="Write something here"><br><br>
-               <input type="submit" value="submit">
+               <input type="text" placeholder="Write something here"style="height:200px"><br><br>
+               <input type="submit" value="submit" style="background-color:black;color:white;font-size: 20px;">
              </fieldset>
             </form>
           </div>
           <div class="col-md-6 col-sm-12">
-            <img src="assets/img5.jpg">
+            <img src="assets/img4.jpg" style="padding-top:100px; width:400px;height:600px">
           </div>
         </div>
       </div>
@@ -271,7 +282,7 @@
   </main>
 
   <footer>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" id="contact">
       <div class="row text-left">
         <div class="col-md-4">
           <h1>MY Log travels</h>
