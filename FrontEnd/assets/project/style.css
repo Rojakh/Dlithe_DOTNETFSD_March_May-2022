@@ -33,6 +33,16 @@ header .row .col-md-5 button{
     background-image: url(assets/3.jpg);
     
 } 
+@media only screen and (max-width:600px){
+    .section-3 .col-md-6 img{
+     position: relative;
+     border-radius: 30vmin;
+     height: 50vmin;
+     width:50vmin;
+     margin-top: 10vmin;
+     margin-right: 3vmin;
+    }
+}
 .section-2{
     position: relative;
     background-image: url(assets/3.jpg);
