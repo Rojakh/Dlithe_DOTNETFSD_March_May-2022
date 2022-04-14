@@ -1,0 +1,15 @@
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\bin\Debug\net6.0\datatypes.exe
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\bin\Debug\net6.0\datatypes.deps.json
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\bin\Debug\net6.0\datatypes.runtimeconfig.json
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\bin\Debug\net6.0\datatypes.dll
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\bin\Debug\net6.0\datatypes.pdb
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\obj\Debug\net6.0\datatypes.csproj.AssemblyReference.cache
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\obj\Debug\net6.0\datatypes.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\obj\Debug\net6.0\datatypes.AssemblyInfoInputs.cache
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\obj\Debug\net6.0\datatypes.AssemblyInfo.cs
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\obj\Debug\net6.0\datatypes.csproj.CoreCompileInputs.cache
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\obj\Debug\net6.0\datatypes.dll
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\obj\Debug\net6.0\refint\datatypes.dll
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\obj\Debug\net6.0\datatypes.pdb
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\obj\Debug\net6.0\datatypes.genruntimeconfig.cache
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\datatypes\datatypes\obj\Debug\net6.0\ref\datatypes.dll
