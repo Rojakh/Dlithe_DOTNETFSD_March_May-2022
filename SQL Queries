@@ -1,1 +1,113 @@
 
+create database Dlithe3
+use Dlithe3
+
+create table student1
+(
+ID int,
+Name varchar(20),
+Branch varchar(20),
+)
+
+insert into student1 values(01,'ramu','computer science');
+insert into student1 values(02,'sangeetha','electrical');
+insert into student1 values(03,'raju','mechanical');
+insert into student1 values(04,'ramya','robotics');
+insert into student1 values(05,'shwetha','computer science');
+insert into student1 values(06,'teju','civil');
+
+select * from student1
+
+update student1 set Branch='mechanical' where ID=6
+
+delete from student1 where ID=6
+select * from student1
+
+create schema DT
+
+create table DT.STUD
+(
+ID int,
+Name varchar(20),
+Branch varchar(20)
+)
+
+drop table DT.STUD
+
+select * from student1 where Branch='computer science'
+
+select * from student1 where ID<5
+
+select * from student1 where ID<5 and Branch='computer science'
+
+select * from student1 where ID<5 or Branch='computer science'
+
+select * from student1 where ID between 3 and 5
+
+select * from student1 where branch IN('electrical','civil')
+
+select * from student1 where branch NOT IN('electrical','civil')
+
+select * from student1 where Name like 's%';
+
+select * from student1 where Name like '_%a';
+
+select * from student1 where Name like '[s-v]%';
+
+select * from student1 where Name NOT like 's%';
+
+select * from student1 where Name NOT like '[s-t]%';
+
+
+create table employee
+(
+name varchar(20),
+address varchar(30),
+age int,
+salary int,
+mobile varchar(10)
+)
+
+insert into employee values('roja','belur',21,35000,1254125412);
+insert into employee values('amar','bengalore',22,40000,1254155412);
+insert into employee values('bharathi','mysore',20,45000,9954125412);
+insert into employee values('kavya','mandya',25,35000,9554125412);
+insert into employee values('seetha','kodagu',30,25000,8854125412);
+insert into employee values('yamuna','jp nagar',26,35000,7254125412);
+insert into employee values('ganga','halebidu',24,30000,9254125412);
+insert into employee values('lavanya','mangalore',29,36000,1154125412);
+insert into employee values('nisha','belgaum',31,30000,6354125412);
+
+select * from employee
+
+select max(salary) as 'Maximum salary' from employee
+
+select min(salary) as 'Minimum salary' from employee
+
+select count(salary) as 'count salary' from employee
+
+select avg(salary) as'average salary' from employee
+
+select sum(salary) as 'sum salary' from employee
+
+select * from employee order by name
+
+select * from employee order by mobile
+
+select * from employee order by salary
+
+select * from employee order by age
+
+select max(salary),age from employee group by age
+
+select avg(salary),age from employee group by age
+
+select avg(salary),age from employee group by age having avg(salary)>36000 order by avg(salary)
+
+select address from employee
+
+select distinct address from employee
+
+select count(address) from employee
+
+select count(distinct address) from employee
