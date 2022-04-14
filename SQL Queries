@@ -111,3 +111,571 @@ select distinct address from employee
 select count(address) from employee
 
 select count(distinct address) from employee
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+create database task
+use task
+
+create table student
+(
+SID INT PRIMARY KEY IDENTITY(1,1),
+SNAME VARCHAR(30) UNIQUE NOT NULL,
+AGE INT CHECK(AGE>25),
+BRANCH VARCHAR(30)DEFAULT 'COMPUTER SCIENCE'
+)
+
+INSERT INTO STUDENT VALUES('RAJ',26,'EC');
+INSERT INTO STUDENT VALUES('SANDHYA',27,'CIVIL');
+INSERT INTO STUDENT VALUES('GURU',29,'MECHANICAL');
+INSERT INTO STUDENT VALUES('ARYA',30,'CS');
+INSERT INTO STUDENT(SNAME,AGE)VALUES('SHREYA',30);
+
+SELECT *FROM STUDENT
+
+CREATE TABLE EMPLOYEE
+(
+ID INT IDENTITY(1,1),
+NAME VARCHAR(20)
+)
+
+INSERT INTO EMPLOYEE VALUES('RAJ');
+INSERT INTO EMPLOYEE VALUES('RAGINI');
+INSERT INTO EMPLOYEE VALUES('RAMU');
+INSERT INTO EMPLOYEE VALUES('RAGHU');
+
+SELECT * FROM EMPLOYEE
+
+SET IDENTITY_INSERT EMPLOYEE ON;
+INSERT INTO EMPLOYEE(ID,NAME)VALUES (5,'SAGAR');
+
+SET IDENTITY_INSERT EMPLOYEE OFF;
+INSERT INTO EMPLOYEE VALUES('RAM');
+INSERT INTO EMPLOYEE VALUES('SANGEETHA');
+INSERT INTO EMPLOYEE VALUES('RANI');
+INSERT INTO EMPLOYEE VALUES('ASHWINI');
+
+
+SELECT IDENT_CURRENT('EMPLOYEE')
+
+alter table Employee add constraint pk_eid PRIMARY KEY(ID)
+SELECT *FROM EMPLOYEE
+
+--string functions--
+SELECT CHAR(65) AS NumberCodeToCharacter;
+
+SELECT CONCAT('ROJA','KH');
+
+SELECT DATALENGTH('rojakh.com');
+
+--MATH FUNCTIONS--
+
+SELECT COUNT(NAME)FROM EMPLOYEE;
+
+SELECT AVG(ID)FROM EMPLOYEE;
+
+--DATETIME FUNCTIONS--
+
+SELECT DATE ("2022-04-07");
+
+SELECT DATE("2017-06-15 09:34:21");   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--primary key and parent table--
+
+create table employees1
+(
+EmpID INT PRIMARY KEY,
+EmpName VARCHAR(25),
+EmpAddress varchar(25)
+)
+
+insert into employees1 values(11,'raj','bangalore');
+insert into employees1 values(12,'amar','delhi');
+insert into employees1 values(13,'saakshi','mangalore');
+insert into employees1 values(14,'jeevan','mysore');
+insert into employees1 values(15,'sindu','belur');
+insert into employees1 values(16,'bindu','mandya');
+insert into employees1 values(17,'chaithra','bangalore');
+
+--foreign key and child table--
+
+create table Company
+(
+CID INT PRIMARY KEY,
+CNAME VARCHAR(25),
+employees1No INT FOREIGN KEY REFERENCES employees1(EmpId)
+)
+
+insert into Company values(101,'infosys',11);
+insert into Company values(102,'Wipro',12);
+insert into Company values(103,'Datalyzer',13);
+insert into Company values(104,'Mphasis',14);
+insert into Company values(105,'Mindtree',15);
+insert into Company values(106,'Tcs',16);
+insert into Company values(107,'Tach mahindra',17);
+
+--REFERENTIAL INTEGRITY--
+
+alter table Company drop constraint FK__Company__employe__59FA5E80 --dropping a foreign key
+
+alter table Company add constraint FK__Company__employe__59FA5E80 foreign key(employees1No) references employees1(EmpID) on delete cascade;
+
+--Delete--
+
+delete from employees1 where EmpId=17
+
+select * from employees1
+
+--Update--
+
+update employees1 set EmpId=18 where EmpId=17
+
+alter table Company drop constraint FK__Company__employe__59FA5E80
+
+update employees1 set EmpId=17 where EmpId=16
+
+--Index-clusterd-non clustered and filtered index--
+
+create table employee2
+(
+Emp_id INT PRIMARY KEY,
+Emp_name VARCHAR(20),
+Experience int,
+Salary int
+)
+
+insert into employee2 values(101,'ram',10,20000);
+insert into employee2 values(102,'anand',3,20000);
+insert into employee2 values(103,'rani',1,20000);
+insert into employee2 values(104,'seetha',5,20000);
+insert into employee2 values(105,'ramya',11,20000);
+
+select * from employee2
+
+update employee2 set salary=30000 where Emp_id=101
+update employee2 set salary=25000 where Emp_id=102
+update employee2 set salary=35000 where Emp_id=103
+update employee2 set salary=37000 where Emp_id=104
+
+alter table employee2 drop constraint PK__employee__263E2DD312392F08
+
+--cluster creation--
+create clustered index EID on employee2(Emp_id)
+
+select Emp_id from employee2
+
+select * from employee2 where salary>=30000
+
+--Filter index--
+
+create index Emp_salary on employee2(salary) where salary>=30000
+
+--unique non clustered--
+create unique nonclustered index Empe_Empname on employee2(Emp_name)
+
+--Sequences--
+
+create sequence dbo.seqemployee2
+as int
+start with 1
+increment by 1
+
+--to view
+select * from sys.sequences where name='Seqemployee2'
+
+create table seq_emp
+(
+eid int primary key,
+name varchar(20),
+address varchar(20)
+)
+
+--for finding next value--
+
+select next value for dbo.Seqemployee2 
+
+insert into seq_emp values(next value for dbo.Seqemployee2,'ram','bangalore')
+insert into seq_emp values(next value for dbo.Seqemployee2,'sanvi','mysore')
+insert into seq_emp values(next value for dbo.Seqemployee2,'rani Murthy','mangalore')
+insert into seq_emp values(next value for dbo.Seqemployee2,'yathish','belgaum')
+insert into seq_emp values(next value for dbo.Seqemployee2,'sagar','delhi')
+
+select * from seq_emp 
+
+delete from seq_emp 
+
+--resets the values--
+
+alter sequence Seqemployee2  restart with 1 
+
+--drop the sequence--
+
+drop sequence seqemployee2
+
+--views--
+--1.simple views--
+--2.complex views--
+
+--simple views--are used for viewing the single table
+
+create view view_employee2salary
+as 
+select emp_id,emp_name,salary,experience,iif(experience>5,'eligible','not eligible')as promotion from employee2 
+
+select * from View_employee2salary
+
+--complex view--
+
+create view View_empPromotion
+as
+select e.Emp_id,e.Emp_name,e.experience,c.CID,c.name
+from employees1 as e full join Company as c on e.Emp_id=c.CID
+full join employee2 as d on c.cID=d.eID
+
+select * from View_empPromotion
+
+--synonyms--
+
+create synonym empl for dbo.employee1
+
+select * from empl 
+
+drop synonym if exists empl
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Sub Queries--
+
+--A subquery is a query within another query.--
+
+use Dlithe2
+select * from employees1
+select * from Company
+select * from employee2
+
+ --where IN(ONE TABLE)
+
+select * from employees1 where EmpId in   
+(select EmpId from employees1 where EmpName='jeevan') --SUB QUERY/INNER QUERY
+
+--use like operator--
+
+select * from employees1 where EmpId in 
+(select EmpId from employees1 where empname LIKE 'r%')
+
+--where IN(TWO TABLES)--
+
+select * from employees1 where empid in 
+(select cid from Company)--SUB QUERY/INNER QUERY (100,101,102)
+
+--SELECT SUBQUERY--
+--select column,column,subquery from tablename
+use Dlithe2
+select orderid,orderdate,
+(select custId from customer where customer.custId=orders.orderId)Customer_No from orders
+
+select * from orders
+select * from customer
+select * from product
+
+insert into orders values(7,'gobi','2022-03-03');
+
+ --FROM SUBQUERY--
+select c.custid,c.custname from
+(select count(orderId) as Count_CustomerID from orders) as o,Customer as c
+where c.CustID > o.Count_CustomerID --Count_CustomerID=3
+
+
+--INSERT SUBQUERY--
+--Matching columns
+select * from Customer
+create table Customers_backup
+(
+c_no int,
+c_name varchar(25))
+
+insert into Customers_backup
+select * from customer where custid in
+(select custid from customer where custname like '_a%');
+
+--UPDATE SUBQUERY--
+select * from Customer
+select * from orders
+
+update orders set quantity =10 where cno in
+(select custid from customer where custname='anand')
+
+alter table orders add quantity int
+
+select * from orders
+
+update orders set quantity=2
+where orderId=7
+
+alter table customer drop column cno
+
+--DELETE SUBQUERY--
+delete from orders where cno in 
+(select custid from customer where custname in('sharath','girija'))
+
+select * from orders
+
+--Functions--
+
+--Scalar functions--
+
+--formula (a-b)^2
+create function formula(@a int,@b int)
+returns int
+as
+begin
+    return @a*@a-(2*(@a*@b))+@b*@b
+end
+
+--call the function
+select dbo.formula(2,2) as Result
+
+drop function dbo.formula
+
+--Grouping Sets, Rollup, Cube and Coalesce--
+
+--Grouping Sets--
+select * from student
+alter table student add marks int
+
+update student set marks=97 where id=5
+
+select branch,COUNT(marks) as TotalScore from student
+group by GROUPING SETS
+(
+(branch,marks)
+)
+
+--RollUp--
+
+Select branch as Student_branch,sum(marks) as TotalScore from student group by rollup(branch);
+
+--coalesce(replaces the NULL with an Actual Value)--
+
+Select coalesce(branch,'Overall_TotalScore') as Student_branch,sum(marks) as TotalScore from student group by rollup(branch);
+
+--cube--
+
+Select coalesce(branch,'Overall_TotalScore') as Student_branch,sum(marks) as TotalScore from student group by cube(branch);
+
+--stored procedure--
+
+select * from student
+
+--no parameter--
+
+select * from student
+create procedure proc_stud
+as
+begin
+    select * from student where id=4;
+end
+
+--Execute procedure--
+execute proc_stud
+--or--
+exec proc_stud
+
+--Input parameter--
+
+create procedure sp_studentbranch (@branch1 varchar(25))
+as
+begin
+    select * from student where branch=@branch1 
+end
+
+exec sp_studentbranch 'civil'
+
+--Output Parameter
+
+create procedure sp_maxmarks(@maxmarks int OUTPUT)
+as
+begin
+    select @maxmarks=max(marks) from student
+end
+
+Declare @result int
+exec sp_maxmarks @result OUTPUT
+print @result 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+use Dlithe2
+
+--Triggers--
+
+create table student1(
+id int,
+name varchar(20),
+branch varchar(20)
+)
+
+insert into student1 values(1,'rajesh','computer science');
+
+select * from student1
+--DML Triggers--
+--Insert,Update,Delete--
+
+--For insert--
+
+create trigger trigger_insert
+on student1
+FOR INSERT
+as
+BEGIN
+    print 'we cannot insert'
+    ROLLBACK TRANSACTION
+END
+
+--Error message displays---
+
+insert into student1 values(2,'jagan','cs');
+
+--For Update--
+
+create trigger trigger_update
+on student1
+FOR UPDATE
+as
+BEGIN
+    print 'we cannot update'
+    ROLLBACK TRANSACTION
+END
+
+--Error message displays--
+
+update student1 set name='gagan' where id=1
+
+--For Delete--
+
+create trigger trigger_delete
+on student1
+FOR DELETE
+as
+BEGIN
+    print 'we cannot delete'
+    ROLLBACK TRANSACTION
+END
+
+--Error message displays--
+
+delete from student1 where id=1
+
+--we drop all the triggers--
+
+drop trigger trigger_insert
+drop  trigger trigger_update
+drop  trigger trigger_delete
+
+--Particular period of time--
+
+create trigger trigger_stud
+on student1
+FOR INSERT,UPDATE,DELETE
+as
+BEGIN
+    print 'we cannot insert update and delete'
+    ROLLBACK TRANSACTION
+END
+
+--FOR DML (PARTICULAR PERIOD OF TIME)
+alter trigger trigger_stud
+on student1
+FOR INSERT,UPDATE,DELETE
+as
+BEGIN
+    IF DATEPART(DW,GETDATE())=3
+        BEGIN
+            PRINT 'DML OPERATIONS CANNOT BE PERFORMED ON TUESDAY'
+            ROLLBACK TRANSACTION
+        END
+END
+
+select * from student1
+
+insert into student1 values(3,'ram');
+
+drop trigger trigger_stud
+
+--INSERTED AND DELETED TABLE
+create trigger trginsert_stud1
+ON student1
+FOR INSERT
+AS
+    BEGIN
+        select * from inserted
+    END
+
+select * from student1
+insert into student1 values(1,'John')
+
+create trigger trgdelete_stud1
+ON student1
+FOR DELETE
+AS
+    BEGIN
+        select * from deleted
+    END
+
+select * from student1
+delete from student1 where id=1
+
+create trigger trgupdate_stud1
+ON student1
+FOR UPDATE
+AS
+    BEGIN
+        select * from INSERTED
+        select * from DELETED
+    END
+
+update student1 set name='roja' where id=3
+
+drop trigger trgupdate_stud1
+
+--Transactions--
+--COMMIT Transaction--
+
+BEGIN TRANSACTION
+    insert into student1 values(10,'rohith','computer science');
+    update student1 set branch='mechanical' where id=10;
+
+COMMIT TRANSACTION
+
+--ROLLBACK Transaction--
+
+BEGIN TRANSACTION
+    insert into student1  values(11,'ranga','cs');
+    update student1 set branch='ec' where id=11;
+ROLLBACK TRANSACTION
+
+--Save point Transaction--
+
+BEGIN TRANSACTION
+    insert into student1 values(13,'sandya','ec');
+    SAVE TRANSACTION new_stud
+    update student1 set branch='civil' where id=11;
+    select * from student1;
+    ROLLBACK TRANSACTION new_stud
+COMMIT TRANSACTION
+
+--Temporary Tables--
+
+SELECT id,name,branch INTO #stud_details from student1
+
+Select * from #stud_details
+
+CREATE TABLE #stud2
+(
+name varchar(25),
+age int
+)
+
+
+INSERT INTO #stud2 SELECT name,branch from student1
+
+select * from #stud2
