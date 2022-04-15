@@ -8,7 +8,7 @@ namespace task21
 {
     internal class naturalnum
     {
-        public static void main()
+        public static void Main()
         {
             int n, sum = 0;
             Console.Write("enter the number : ");
