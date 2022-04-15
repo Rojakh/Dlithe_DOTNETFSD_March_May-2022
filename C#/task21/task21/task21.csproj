@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>task21.trainee_Details</StartupObject>
+    <StartupObject>task21.calculator</StartupObject>
   </PropertyGroup>
 
 </Project>

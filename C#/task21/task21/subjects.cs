@@ -21,6 +21,7 @@ namespace task21
 
             total = sub1 + sub2 + sub3;
             Console.Write("total marks of the subjects is: ", total);
+            total= Convert.ToInt32(Console.ReadLine());
 
             avg = total/3.0;
 
