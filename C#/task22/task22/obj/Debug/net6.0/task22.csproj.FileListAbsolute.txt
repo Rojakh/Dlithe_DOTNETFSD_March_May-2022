@@ -1,0 +1,5 @@
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\task22\task22\obj\Debug\net6.0\task22.csproj.AssemblyReference.cache
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\task22\task22\obj\Debug\net6.0\task22.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\task22\task22\obj\Debug\net6.0\task22.AssemblyInfoInputs.cache
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\task22\task22\obj\Debug\net6.0\task22.AssemblyInfo.cs
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\task22\task22\obj\Debug\net6.0\task22.csproj.CoreCompileInputs.cache

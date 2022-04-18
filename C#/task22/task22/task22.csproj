@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>task21.break_conti</StartupObject>
+    <StartupObject>task22.floyd</StartupObject>
   </PropertyGroup>
 
 </Project>

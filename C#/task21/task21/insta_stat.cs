@@ -6,37 +6,35 @@ using System.Threading.Tasks;
 
 namespace task21
 {
-    internal class cycle
+    internal class insta_stat
     {
-    
-        
-            //Static method or class method
-            public static void run()
-            {
-                Console.WriteLine("This is the static method");
-            }
 
-            //instanse method
-            public void engine()
-            {
-                Console.WriteLine("This is the instance method");
-            }
-
-        }
-
-
-        class Program
+        public class method
         {
-            static void Main(string[] args)
+            //Static method
+            public static void mul(int k, int m)
             {
-                //Call static method by class name 
-                cycle.run();
+                int result = k*m;
+                Console.WriteLine("{0} * {1} = {2}", k, m, result);
+            }
 
+            //Instance method
+            public void div(int k, int m)
+            {
+                int result = k/m;
+                Console.WriteLine("{0} / {1} = {2}", k, m, result);
+            }
 
-                //Call non-static method. call method by object
-                cycle c = new cycle();
-                c.engine();
+            public static void Main()
+            {
+                //Invoking static method
+                mul(20, 30);
+
+                //Invoking instance method
+                method n = new method();
+                n.div(30, 3);
             }
         }
-}
 
+    }
+}
