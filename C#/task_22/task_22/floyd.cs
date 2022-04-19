@@ -10,7 +10,7 @@ namespace task_22
     {
         public static void Main()
         {
-
+            Console.WriteLine("Floyd Triangle");
             int i, j, k = 1;
             for (i = 1; i <= 3; i++)
             {

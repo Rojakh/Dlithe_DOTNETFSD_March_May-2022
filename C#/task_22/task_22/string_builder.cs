@@ -10,6 +10,7 @@ namespace task_22
     {
         public static void Main()
         {
+            Console.WriteLine("StringBuilder Method");
             //creation of StringBuilder
             StringBuilder sb = new StringBuilder("Hello", 50);
 

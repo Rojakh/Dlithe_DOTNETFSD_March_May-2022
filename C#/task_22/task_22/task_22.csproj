@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>task_22.TwoD_Array</StartupObject>
+    <StartupObject>task_22.Jagged_array</StartupObject>
   </PropertyGroup>
 
 </Project>
