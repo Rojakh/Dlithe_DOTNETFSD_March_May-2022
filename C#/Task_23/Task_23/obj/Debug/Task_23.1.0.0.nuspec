@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Task_23</id>
+    <version>1.0.0</version>
+    <authors>Task_23</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_23\Task_23\bin\Debug\net6.0\Task_23.runtimeconfig.json" target="lib\net6.0\Task_23.runtimeconfig.json" />
+    <file src="E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_23\Task_23\bin\Debug\net6.0\Task_23.dll" target="lib\net6.0\Task_23.dll" />
+  </files>
+</package>
