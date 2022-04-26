@@ -1,0 +1,15 @@
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\obj\Debug\net6.0\Task_27.csproj.AssemblyReference.cache
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\obj\Debug\net6.0\Task_27.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\obj\Debug\net6.0\Task_27.AssemblyInfoInputs.cache
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\obj\Debug\net6.0\Task_27.AssemblyInfo.cs
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\obj\Debug\net6.0\Task_27.csproj.CoreCompileInputs.cache
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\bin\Debug\net6.0\Task_27.exe
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\bin\Debug\net6.0\Task_27.deps.json
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\bin\Debug\net6.0\Task_27.runtimeconfig.json
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\bin\Debug\net6.0\Task_27.dll
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\bin\Debug\net6.0\Task_27.pdb
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\obj\Debug\net6.0\Task_27.dll
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\obj\Debug\net6.0\refint\Task_27.dll
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\obj\Debug\net6.0\Task_27.pdb
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\obj\Debug\net6.0\Task_27.genruntimeconfig.cache
+E:\Dlithe_DOTNETFSD_March_May-2022\C#\Task_27\Task_27\obj\Debug\net6.0\ref\Task_27.dll
