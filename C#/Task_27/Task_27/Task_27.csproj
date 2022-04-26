@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Task_27.Custom_excep</StartupObject>
+    <StartupObject>Task_27.demo</StartupObject>
   </PropertyGroup>
 
 </Project>

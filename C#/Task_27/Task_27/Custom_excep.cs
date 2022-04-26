@@ -28,7 +28,7 @@ namespace Task_27
             }
             public static void MobileValidation()
             {
-                string[] mobile = { "2545414854", "6362554060" };
+                string[] mobile = { "2545414854", "62656516221" };
                 foreach (string m in mobile)
                 {
                     Console.WriteLine(m);
@@ -37,7 +37,7 @@ namespace Task_27
             }
             public static bool checkMobile(string mobile)
             {
-                string mregexp = @"(^[0-7]{10}$)";
+                string mregexp = @"(^[0-9]{10}$)";
                 Regex r = new Regex(mregexp);
                 if (r.IsMatch(mobile))
                 {

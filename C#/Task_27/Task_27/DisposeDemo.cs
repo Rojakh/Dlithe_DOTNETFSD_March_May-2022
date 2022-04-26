@@ -5,43 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Task_27
 {
-    class ResourceManagement : IDisposable
+    class dp : IDisposable
     {
-        public static void Main() { }
-        public ResourceManagement()
-        { }
-        private bool IsDisposed = false;
-        public void Free()
-        {
-            if (IsDisposed)
-                throw new System.ObjectDisposedException("Object Name");
-        }
-        //Call Dispose to free resources explicitly
+       
+       
         public void Dispose()
         {
-            //Pass true in dispose method to clean managed resources too and say GC to skip finalize in next line.
-            Dispose(true);
-            //If dispose is called already then say GC to skip finalize on this instance.
-            GC.SuppressFinalize(this);
+            Console.WriteLine("this is dispose method()");
         }
-        ~ResourceManagement()
+         
+       
+       }
+    class addition
+    {
+        public addition()
         {
-            //Pass false as param because no need to free managed resources when you call finalize it will be done
-            //by GC itself as its work of finalize to manage managed resources.
-            Dispose(false);
+            int a = 20, b = 10,c=a+b;
+            Console.WriteLine("{0} + {1} = {2}", a, b, c);
+            
         }
-        //Implement dispose to free resources
-        protected virtual void Dispose(bool disposedStatus)
+        ~addition()
         {
-            if (!IsDisposed)
-            {
-                IsDisposed = true;
-                // Released unmanaged Resources
-                if (disposedStatus)
-                {
-                    // Released managed Resources
-                }
-            }
+            Console.WriteLine("Im destructor");
+        }
+
+
+    }
+    class demo
+    {
+        public static void Main()
+        {
+            addition a = new addition();
+            dp d=new dp();
+            d.Dispose();
+
         }
     }
-}
+    }
+
