@@ -10,6 +10,7 @@ namespace Task_27
     {
         public static void Main()
         {
+            Console.WriteLine("this is a pass by value");
             int X = 100;
             Console.WriteLine("Variable value before calling the method: " +X);
             AddingNumberByFive(X);
